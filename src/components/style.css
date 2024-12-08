@@ -1,0 +1,44 @@
+/* --------Prodict */
+.product #imageProduct {
+  width: 110px;
+  height: 150px;
+  margin: auto;
+}
+.product h3 {
+  font-size: 18px;
+  font-weight: 700;
+  height: 25px;
+  overflow: hidden;
+}
+.product p {
+  font-size: 15px;
+  color: #888;
+  height: 70px;
+  overflow: hidden;
+}
+.product .line {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.product .boxx {
+  height: 430px;
+}
+@media (max-width: 992px) {
+  .product .line {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 672px) {
+  .product .line {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* -------cart */
+.cart {
+  margin-top: 135px;
+}
